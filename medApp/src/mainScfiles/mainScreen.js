@@ -10,7 +10,7 @@ import Slidestop from './slide';
 import DailyMed from './dailmed';
 
 // create a component
-const MainScreen = () => {
+const MainScreen = ({navigation}) => {
     const meds = [
         { 
             name: 'Penadol',
@@ -66,7 +66,7 @@ const MainScreen = () => {
         <Slidestop />
         <Catagory />
         <DailyMed head="Daily Essential Medicine" products={meds} />
-        <DailyMed head="Suppliments" products={suppliments} />
+        <DailyMed head="Suppliments" products={suppliments} press={navigation} />
       </ScrollView>
     </View>
   );

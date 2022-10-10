@@ -12,7 +12,7 @@ import {
 import Window from '../Width';
 
 // create a component
-const DailyMed = ({head, products}) => {
+const DailyMed = ({head, products, press}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.head}>{head}</Text>
@@ -22,7 +22,7 @@ const DailyMed = ({head, products}) => {
         style={{paddingBottom: 15,}}
       > 
         {products.map( (el,i) => (
-        <TouchableOpacity key={i} style={styles.click}>
+        <TouchableOpacity key={i} style={styles.click} onPress={() => press.push('Details')}>
           
           <Image
             source={el.image}
