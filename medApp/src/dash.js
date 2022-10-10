@@ -6,7 +6,7 @@ import { ColorfulTabBar } from 'react-navigation-tabbar-collection';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 // import Local Files here
-import Home from './mainScreen';
+import Home from './mainScfiles/mainScreen';
 
 const Tab = createBottomTabNavigator();
 

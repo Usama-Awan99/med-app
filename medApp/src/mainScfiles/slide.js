@@ -1,6 +1,8 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
+import Window from '../Width';
+
 
 // create a component
 const Slidestop = () => {
@@ -24,7 +26,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#2c3e50',
     },
     img: {
-        
+        width: Window.width,
+        height: 150,
     }
 });
 
