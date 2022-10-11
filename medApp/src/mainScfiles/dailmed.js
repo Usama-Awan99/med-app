@@ -22,7 +22,7 @@ const DailyMed = ({head, products, press}) => {
         style={{paddingBottom: 15,}}
       > 
         {products.map( (el,i) => (
-        <TouchableOpacity key={i} style={styles.click} onPress={() => press.push('Details')}>
+        <TouchableOpacity key={i} style={styles.click} onPress={() => press.push('Details',{cData:el})}>
           
           <Image
             source={el.image}
