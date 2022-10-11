@@ -61,11 +61,11 @@ const MainScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Topbar />
+      <Topbar press={navigation} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <Slidestop />
         <Catagory />
-        <DailyMed head="Daily Essential Medicine" products={meds} />
+        <DailyMed head="Daily Essential Medicine" products={meds} press={navigation} />
         <DailyMed head="Suppliments" products={suppliments} press={navigation} />
       </ScrollView>
     </View>
