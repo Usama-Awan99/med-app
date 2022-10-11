@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 
 // import Local Files here
 import Home from './mainScfiles/mainScreen';
+import HealthCare from './health/mainfile';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,7 +37,7 @@ const Dashboard = () => {
       />
       <Tab.Screen
         name="HealthCare"
-        component={DemoScreen}
+        component={HealthCare}
         options={{
           title: 'HealthCare',
           icon: ({ focused, color, size }) => (
