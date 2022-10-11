@@ -31,14 +31,17 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexWrap: 'wrap',
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
   },
   click: {
-    width: Window.width / 2.1,
+    width: Window.width / 2.3,
     // padding: 5,
     borderRadius: 10,
     elevation: 5,
     marginHorizontal: 5,
-    backgroundColor: '#f6f6f6'
+    backgroundColor: '#f6f6f6',
+    marginBottom: 5,
   },
   img: {
     width: Window.width / 2.2,
